@@ -12,7 +12,7 @@ text.each { |str|
     if iterations >= char_min and iterations <= char_max then results[0] += 1 # check if the pw meets the criteria for task 1
     end
 
-    if (password[char_min - 1] == char_to_match and password[char_max - 1] != char_to_match) or (password[char_min - 1] != char_to_match and password[char_max - 1] == char_to_match) # check if the pw meets the criteria for task 2
+    if (password[char_min - 1] == char_to_match) != (password[char_max - 1] == char_to_match) # check if the pw meets the criteria for task 2
         results[1] += 1 
     end
     

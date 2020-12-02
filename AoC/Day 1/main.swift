@@ -21,7 +21,7 @@ catch let error {
 for i in nums {
     for j in nums {
         if i + j == 2020, !isTaskComplete[0] {
-            print("Product of 2 numbers whose sum is 2020: ", i * j) // once the 2 numbers are found, print their sum
+            print("Product of 2 numbers whose sum is 2020: ", i * j) // once the 2 numbers are found, print their product
             isTaskComplete[0] = true // mask task 0 as completed
             if isTaskComplete[1] { // early exit if both tasks are complete
                 exit(0)
@@ -34,7 +34,7 @@ for i in nums {
             }
 
             if i + j + k == 2020 { 
-                print("Product of 3 numbers whose sum is 2020: ", i * j * k) // once the 2 numbers are found, print their sum
+                print("Product of 3 numbers whose sum is 2020: ", i * j * k) // once the 2 numbers are found, print their product
                 isTaskComplete[1] = true // mark task 1 as completed
                 if isTaskComplete[0] { // early exit if both tasks are complete
                     exit(0)

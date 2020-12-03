@@ -15,7 +15,7 @@ text.each { |str|
     if (password[char_min - 1] == char_to_match) != (password[char_max - 1] == char_to_match) # check if the pw meets the criteria for task 2
         results[1] += 1 
     end
-    
+
     puts "Minimum: %s\tMaximum: %s\nChar: %s\tPw: %s\n\n" % [char_min, char_max, char_to_match, password]
 }
 

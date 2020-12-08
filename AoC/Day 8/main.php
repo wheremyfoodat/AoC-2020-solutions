@@ -22,8 +22,10 @@
         $pc++;
         $iterations++;
 
-        evalTask1($a, $pc, $task1Completed, $previousPCs);
-        array_push($previousPCs, $pc);
+        if (!$task1Completed) {
+            evalTask1($a, $pc, $task1Completed, $previousPCs);
+            array_push($previousPCs, $pc);
+        }
 
         switch ($opcode) {
             case "nop": break;

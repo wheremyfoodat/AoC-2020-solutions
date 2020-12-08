@@ -44,7 +44,7 @@
             default: echo "Unimplemented instruction $opcode\n"; break;
         }
 
-        # if iterations > 10000, assume an infinite loop
+        # if iterations > number of instructions, assume an infinite loop
         if ($iterations > $len && $task1Completed) { // swap a NOP/JMP and rerun
             $pc = 0; # reset state
             $a = 0;
